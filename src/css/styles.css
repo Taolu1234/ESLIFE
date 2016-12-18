@@ -1,0 +1,128 @@
+* {
+	margin: 0;/*外边距上右下左的值都为0*/
+	padding: 0;/*内边距上右下左的值都为0*/
+	font-family: "Lantinghei SC", "Microsoft Yahei", 宋体, Arial, Helvetica, sans-serif;/*规定元素的字体系列*/
+	font-size: 18px;/*设置字体的尺寸*/
+	font-style: normal;/*字体显示的方式 italic斜体*/
+}
+
+li,
+ul,
+img,
+a,
+div {
+	border: 1px;/*边框属性*/
+	list-style: none;/*列表样式*/
+}
+
+div {
+	display: block;
+}
+
+a {
+	color: #333333;
+	text-decoration: none;/*划线效果*/
+	outline: none;/*边框效果*/
+}
+
+em {
+	font-weight: bold;/*字体的粗细*/
+}
+
+.top {
+	background-color: #222222;
+}
+
+.neirong {
+	width: 1066px;
+	height: 70px;
+	margin: 0 auto;
+	overflow: hidden;/*规定当内容溢出元素框时发生的事情*/
+	position: relative;/*规定元素的定位类型*/
+}
+
+.logo {
+	width: 160px;
+	height: 70px;
+	float: left;/*图片浮动*/
+	padding-right: 30px;/*右内边距30px*/
+	padding-top: 1px;/*上内边距1*/
+}
+
+.logo a {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.biaoqian {
+	height: 90px;
+	float: left;
+}
+
+.biaoqian li {
+	height: 70px;
+	float: left;
+	margin-right: 20px;/*右外边距*/
+}
+
+.biaoqian li * {
+	color: #dadada;
+	font-size: 18px;
+	display: inline-block;/*内联元素,(行内块元素)简单来说就是在同一行显示*/
+	line-height: 17px;/*行高（两行值间的高度）*/
+	vertical-align: auto;/*设置元素的垂直对齐方式*/
+}
+
+.biaoqian li a {
+	height: 26px;
+	line-height: 22px;
+	padding: 26px 17px;
+}
+
+.biaoqian li.active {
+	background: #333333;
+}
+
+.biaoqian li a:hover {
+	background: #333;
+}
+
+.down {
+	background: #333333;
+	padding: 25px;
+	overflow:hidden;
+}
+
+.xinxi{
+	text-align:center;/*文本居中对齐*/
+}
+
+.zhongjian {
+	width: 1066px;
+	height: 160px;
+	background: dimgray;
+	padding: 160px;
+	text-align: left;
+	overflow:hidden;
+}
+
+.zhongjian li {
+	height: 70px;
+	float: left;
+	margin-right: 20px;/*右外边距*/
+}
+
+.zhongjian li * {
+	color: #dadada;
+	font-size: 18px;
+	display: inline-block;/*内联元素,(行内块元素)简单来说就是在同一行显示*/
+	line-height: 17px;/*行高（两行值间的高度）*/
+	vertical-align: auto;/*设置元素的垂直对齐方式*/
+}
+
+.zhongjian li a {
+	height: 26px;
+	line-height: 22px;
+	padding: 26px 17px;
+}
