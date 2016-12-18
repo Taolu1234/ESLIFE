@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>点餐首页</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<!--<link rel="stylesheet" type="text/css" href="MyStyle.css">-->
+		<style type="text/css">
+			.box{ margin:0 auto; height:300px; width:1300px; padding:10px; border:3px solid white; }
+			.box img{ margin-right:20px;}
+			#goleft {width: 1300px;height:300px;overflow: hidden;}
+			#goleft #gols {width: 33100px;}
+			#goleft1, #goleft2 {width: auto;float: left;}
+			#goleft1 img{
+				height: 300px;
+				width: 350px;
+			}
+		</style>
+	</head>
+
+	<body  background="img/star.png">
+		<div class="top">
+			<div class="neirong">
+				<div class="logo">
+					<img src="img/es.jpg" width="140" height="70" alt="浮生百味" title="浮生百味">
+				</div>
+				<div class="biaoqian">
+					<ul>
+						<li class="caixi.html">
+							<a href="http://www.gzcc.cn/">
+								<em>菜系介绍</em>
+							</a>
+						</li>
+						<li>
+							<a href="xiadan.html">
+								<em>选菜下单</em>
+							</a>
+						</li>
+						<li>							
+							<a href="jiesuan.html">
+								<em>结算</em>
+							</a>
+						</li>						
+						<li>
+							<a href="liuyan.html">
+								<em>客户留言</em>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+<!--
+<div id="photo-list" text-align:center;>
+	<ul id="scroll" text-align:center;>
+		<li><a href="#"><img src="img/1.jpg" width="500px" height="500px" alt=""/></a></li>
+		<li><a href="#"><img src="img/2.jpg" width="500px" height="500px" alt=""/></a></li>
+		<li><a href="#"><img src="img/3.jpg" width="500px" height="500px" alt=""/></a></li>
+		<li><a href="#"><img src="img/4.jpg" width="500px" height="500px" alt=""/></a></li>
+		<li><a href="#"><img src="img/5.jpg" width="500px" height="500px" alt=""/></a></li>
+		<li><a href="#"><img src="img/6.jpg" width="500px" height="500px" alt=""/></a></li>
+</ul>
+	<script type="text/javascript" src="MoveEffect.js"></script>
+</div>
+
+-->
+
+		<div align="center"><img src="img/first.jpg" width="1050" height="400"/></div>
+
+
+		<div class="box">
+			<div id="goleft">
+				<div id="gols">
+					<div id="goleft1">
+						<a href="" ><img src="img/1.jpg"  alt="1" /></a>
+						<a href="" ><img src="img/2.jpg"  alt="2"  /></a>
+						<a href="" ><img src="img/3.jpg"  alt="3" /></a>
+						<a href="" ><img src="img/4.jpg"  alt="4" /></a>
+						<a href="" ><img src="img/5.jpg"  alt="5" /></a>
+						<a href="" ><img src="img/6.jpg"  alt="6" /></a>
+						<a href="" ><img src="img/7.jpg"  alt="7" /></a>
+						<a href="" ><img src="img/8.jpg"  alt="8" /></a>
+						<a href="" ><img src="img/9.jpg"  alt="9" /></a>
+					</div>
+					<div id="goleft2"></div>
+				</div>
+			</div>
+		</div>
+		<!-----------图片滚动结束-------------->
+		<script type="text/javascript">
+			//图片滚动JS代码
+			var speed2=20;
+			var FGgoleft=document.getElementById('goleft');
+			var FGgoleft1=document.getElementById('goleft1');
+			var FGgoleft2=document.getElementById('goleft2');
+			FGgoleft2.innerHTML=FGgoleft1.innerHTML
+			function Marquee2(){
+				if(FGgoleft2.offsetWidth-FGgoleft.scrollLeft<=0)
+				{
+					FGgoleft.scrollLeft-=FGgoleft1.offsetWidth
+				}
+				else{
+					FGgoleft.scrollLeft++;
+				}
+			}
+			var MyMar2=setInterval(Marquee2,speed2)
+			FGgoleft.onmouseover=function() { clearInterval(MyMar2) }
+			FGgoleft.onmouseout=function() { MyMar2=setInterval(Marquee2,speed2) }
+		</script>
+		
+
+
+
+		<div class="down">
+			<div class="xinxi">
+				<p>版权© 广州商学院14级商软(1)班 套路组
+			</div>
+		</div>
+	</body>
+
+</html>
